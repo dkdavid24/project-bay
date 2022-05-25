@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <>
       <nav className="Header">
-        <form>
+        <form  onSubmit={(e)=>{ e.preventDefault() }}>
           <input type="text" name="search"></input>
           <input type="submit" value="Search"></input>
         </form>
@@ -20,14 +20,14 @@ const Login = () => {
         </div>
       </nav>
       <div className="LoginContainer">
-        <form className="Form">
+        <form className="Form"  onSubmit={(e)=>{ e.preventDefault() }}>
           <label>Username</label>
           <input type="text" name="type"></input>
           <label>Password</label>
           <input type="password" name="password"></input>
           <input type="submit" value="Filter"></input>
         </form>
-        <form className="Form">
+        <form className="Form"  onSubmit={(e)=>{ e.preventDefault() }}>
           <label>Username</label>
           <input type="text" name="type"></input>
           <label>Email</label>

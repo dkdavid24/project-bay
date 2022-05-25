@@ -6,7 +6,7 @@ const Add = () => {
   return (
     <>
       <nav className="Header">
-        <form>
+        <form  onSubmit={(e)=>{ e.preventDefault() }}>
           <input type="text" name="search"></input>
           <input type="submit" value="Search"></input>
         </form>
@@ -19,7 +19,7 @@ const Add = () => {
           </Link>
         </div>
       </nav>
-      <form className="AddForm">
+      <form className="AddForm"  onSubmit={(e)=>{ e.preventDefault() }}>
         <label>Title</label>
         <input type="text" name="title"></input>
         <label>Type</label>

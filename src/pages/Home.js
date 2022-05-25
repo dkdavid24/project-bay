@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <>
       <nav className="Header">
-        <form>
+        <form onSubmit={(e)=>{ e.preventDefault() }}>
           <input type="text" name="search"></input>
           <input type="submit" value="Search"></input>
         </form>
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       </nav>
       <div className="Container">
-        <form className="Form">
+        <form className="Form"  onSubmit={(e)=>{ e.preventDefault() }}>
           <label>Type</label>
           <input type="text" name="type"></input>
           <label>Hours to complete</label>
